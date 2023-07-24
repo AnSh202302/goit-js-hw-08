@@ -25,8 +25,8 @@ if (data) {
 
 function onSubmit(e) {
   e.preventDefault();
-  localStorage.clear();
-  console.log(`email: ${email.value}; message: ${message.value}`);
+  localStorage.removeItem(LOCAL_KEY);
+  console.log(dataForm);
   email.value = '';
   message.value = '';
 }
